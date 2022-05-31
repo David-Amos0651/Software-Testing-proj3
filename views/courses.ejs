@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="col-6">
+  </div>
+  <div class="col-6">
+    <h1 class="title">Previous Test Results</h1>
+    <% allCourses.forEach(course => {%>
+      <h3> <%= course.name %> </h3>
+      <h6>HW #1:   <%= course.hw1 %>% </h6>
+      <h6>HW #2:   <%= course.hw2 %>% </h6>
+      <h6>HW #3:   <%= course.hw3 %>% </h6>
+      <h6>Test #1:   <%= course.test1 %>% </h6>
+      <h6>Test #2:   <%= course.test2 %>% </h6> 
+      <h5>Final Number Grade:  <%= course.numericGrade %>% </h5>
+      <h5>Final Letter Grade:  <%= course.letter %> </h5>
+      <% }) %>
+  </div>
+</div>
